@@ -12,7 +12,7 @@ namespace CalculadoraMatriz
 {
     public partial class Form1 : Form
     {
-        static int LMatriz1, CMatriz1, LMatriz2, CMatriz2, LMatrizResut, CMatrizResut;
+        static int LMatriz1, CMatriz1, LMatriz2, CMatriz2;
 
 
 
@@ -288,7 +288,31 @@ namespace CalculadoraMatriz
         }
         #endregion
 
+        #region Limpar Matrizes
+        private void LimparA_Click(object sender, EventArgs e)
+        {
+            Matriz1.Controls.Clear();
+        }
+
+        private void LimparB_Click(object sender, EventArgs e)
+        {
+            Matriz2.Controls.Clear();
+        }
+
+        private void LimparR_Click(object sender, EventArgs e)
+        {
+            MatrizResut.Controls.Clear();
+        }
+        #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+           
+            }
+
+        }
+
       
 
     }
-}

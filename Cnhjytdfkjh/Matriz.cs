@@ -239,21 +239,6 @@ namespace CalculadoraMatriz
         }
         #endregion
 
-       /* #region TranspostaResult
-        public static float[,] TranspostaResult(float[,] MatrizResut)
-        {
-            float[,] matrixfinal = new float[MatrizResut.GetLength(1), MatrizResut.GetLength(0)];
-            for (int i = 0; i < MatrizResut.GetLength(0); i++)
-            {
-                for (int j = 0; j < MatrizResut.GetLength(1); j++)
-                {
-                    matrixfinal[j, i] = MatrizResut[i, j];
-                }
-            }
-            return matrixfinal;
-        }
-        #endregion*/
-
         /// <summary>
         /// Oposta Pronta
         /// </summary>
@@ -292,7 +277,6 @@ namespace CalculadoraMatriz
         }
 
         #endregion
-
 
         /// <summary>
         /// Determinantes Feito
@@ -437,6 +421,137 @@ namespace CalculadoraMatriz
         {
             float[,] MatrizI = MultiplicacaoNormal(Adjunta(Matriz2), 1 / Determinantes(Matriz2));
             return MatrizI;
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Lei de Formação
+        /// </summary>
+        /// <param name="lei"></param>
+        /// <param name="linhas"></param>
+        /// <param name="colunas"></param>
+        /// <returns></returns>
+        #region Lei de Formação
+
+        public static float[,] LeiDeFormacao(string lei, int linhas, int colunas)
+        {
+            char param = ' ';
+            string[] expression = lei.Split(param);
+            float[,] matriz = new float[linhas, colunas];
+            string conta = "";
+            float result = 0;
+            for (int i = 0; i < linhas; i++)
+            {
+                for (int j = 0; j < colunas; j++)
+                {
+                    foreach (string s in expression)
+                    {
+                        switch (s)
+                        {
+                            case "+":
+                                conta = s;
+                                break;
+                            case "-":
+                                conta = s;
+                                break;
+                            case "*":
+                                conta = s;
+                                break;
+                            case "/":
+                                conta = s;
+                                break;
+                            case "^":
+                                conta = s;
+                                break;
+                            case "i":
+                                if (result == 0)
+                                {
+                                    result = i + 1;
+                                }
+                                else
+                                {
+                                    switch (conta)
+                                    {
+                                        case "+":
+                                            result += i + 1;
+                                            break;
+                                        case "-":
+                                            result -= i + 1;
+                                            break;
+                                        case "*":
+                                            result *= i + 1;
+                                            break;
+                                        case "/":
+                                            result /= i + 1;
+                                            break;
+                                        case "^":
+                                            result = (float)Math.Pow(result, i + 1);
+                                            break;
+                                    }
+                                }
+                                break;
+                            case "j":
+                                if (result == 0)
+                                {
+                                    result = j + 1;
+                                }
+                                else
+                                {
+                                    switch (conta)
+                                    {
+                                        case "+":
+                                            result += j + 1;
+                                            break;
+                                        case "-":
+                                            result -= j + 1;
+                                            break;
+                                        case "*":
+                                            result *= j + 1;
+                                            break;
+                                        case "/":
+                                            result /= j + 1;
+                                            break;
+                                        case "^":
+                                            result = (float)Math.Pow(result, j + 1);
+                                            break;
+                                    }
+                                }
+                                break;
+                            default:
+                                if (result == 0)
+                                {
+                                    result = int.Parse(s.ToString());
+                                }
+                                else
+                                {
+                                    switch (conta)
+                                    {
+                                        case "+":
+                                            result += int.Parse(s.ToString());
+                                            break;
+                                        case "-":
+                                            result -= int.Parse(s.ToString());
+                                            break;
+                                        case "*":
+                                            result *= int.Parse(s.ToString());
+                                            break;
+                                        case "/":
+                                            result /= int.Parse(s.ToString());
+                                            break;
+                                        case "^":
+                                            result = (float)Math.Pow(result, int.Parse(s.ToString()));
+                                            break;
+                                    }
+                                }
+                                break;
+                        }
+                    }
+                    matriz[i, j] = result;
+                    result = 0;
+                }
+            }
+            return matriz;
         }
 
         #endregion
