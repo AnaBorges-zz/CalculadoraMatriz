@@ -38,7 +38,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.DeterminanteA = new System.Windows.Forms.Button();
             this.OpostaA = new System.Windows.Forms.Button();
-            this.SimetricaA = new System.Windows.Forms.Button();
             this.InversaA = new System.Windows.Forms.Button();
             this.TranspostaA = new System.Windows.Forms.Button();
             this.Soma = new System.Windows.Forms.Button();
@@ -52,7 +51,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.DeterminanteB = new System.Windows.Forms.Button();
             this.OpostaB = new System.Windows.Forms.Button();
-            this.SimetricaB = new System.Windows.Forms.Button();
             this.TranspostaB = new System.Windows.Forms.Button();
             this.InversaB = new System.Windows.Forms.Button();
             this.LimparB = new System.Windows.Forms.Button();
@@ -150,7 +148,7 @@
             // 
             // DeterminanteA
             // 
-            this.DeterminanteA.Location = new System.Drawing.Point(208, 427);
+            this.DeterminanteA.Location = new System.Drawing.Point(144, 427);
             this.DeterminanteA.Name = "DeterminanteA";
             this.DeterminanteA.Size = new System.Drawing.Size(84, 23);
             this.DeterminanteA.TabIndex = 12;
@@ -160,7 +158,7 @@
             // 
             // OpostaA
             // 
-            this.OpostaA.Location = new System.Drawing.Point(136, 427);
+            this.OpostaA.Location = new System.Drawing.Point(246, 427);
             this.OpostaA.Name = "OpostaA";
             this.OpostaA.Size = new System.Drawing.Size(62, 23);
             this.OpostaA.TabIndex = 13;
@@ -168,18 +166,9 @@
             this.OpostaA.UseVisualStyleBackColor = true;
             this.OpostaA.Click += new System.EventHandler(this.OpostaA_Click);
             // 
-            // SimetricaA
-            // 
-            this.SimetricaA.Location = new System.Drawing.Point(80, 456);
-            this.SimetricaA.Name = "SimetricaA";
-            this.SimetricaA.Size = new System.Drawing.Size(83, 23);
-            this.SimetricaA.TabIndex = 14;
-            this.SimetricaA.Text = "Simétrica";
-            this.SimetricaA.UseVisualStyleBackColor = true;
-            // 
             // InversaA
             // 
-            this.InversaA.Location = new System.Drawing.Point(169, 456);
+            this.InversaA.Location = new System.Drawing.Point(105, 456);
             this.InversaA.Name = "InversaA";
             this.InversaA.Size = new System.Drawing.Size(63, 23);
             this.InversaA.TabIndex = 16;
@@ -231,7 +220,7 @@
             // LimparA
             // 
             this.LimparA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.LimparA.Location = new System.Drawing.Point(136, 496);
+            this.LimparA.Location = new System.Drawing.Point(194, 456);
             this.LimparA.Name = "LimparA";
             this.LimparA.Size = new System.Drawing.Size(75, 23);
             this.LimparA.TabIndex = 25;
@@ -299,7 +288,7 @@
             // 
             // DeterminanteB
             // 
-            this.DeterminanteB.Location = new System.Drawing.Point(591, 427);
+            this.DeterminanteB.Location = new System.Drawing.Point(519, 427);
             this.DeterminanteB.Name = "DeterminanteB";
             this.DeterminanteB.Size = new System.Drawing.Size(84, 23);
             this.DeterminanteB.TabIndex = 12;
@@ -309,7 +298,7 @@
             // 
             // OpostaB
             // 
-            this.OpostaB.Location = new System.Drawing.Point(523, 427);
+            this.OpostaB.Location = new System.Drawing.Point(609, 427);
             this.OpostaB.Name = "OpostaB";
             this.OpostaB.Size = new System.Drawing.Size(62, 23);
             this.OpostaB.TabIndex = 13;
@@ -317,18 +306,9 @@
             this.OpostaB.UseVisualStyleBackColor = true;
             this.OpostaB.Click += new System.EventHandler(this.OpostaB_Click);
             // 
-            // SimetricaB
-            // 
-            this.SimetricaB.Location = new System.Drawing.Point(463, 456);
-            this.SimetricaB.Name = "SimetricaB";
-            this.SimetricaB.Size = new System.Drawing.Size(83, 23);
-            this.SimetricaB.TabIndex = 14;
-            this.SimetricaB.Text = "Simétrica";
-            this.SimetricaB.UseVisualStyleBackColor = true;
-            // 
             // TranspostaB
             // 
-            this.TranspostaB.Location = new System.Drawing.Point(435, 427);
+            this.TranspostaB.Location = new System.Drawing.Point(431, 427);
             this.TranspostaB.Name = "TranspostaB";
             this.TranspostaB.Size = new System.Drawing.Size(82, 23);
             this.TranspostaB.TabIndex = 15;
@@ -338,7 +318,7 @@
             // 
             // InversaB
             // 
-            this.InversaB.Location = new System.Drawing.Point(552, 456);
+            this.InversaB.Location = new System.Drawing.Point(479, 456);
             this.InversaB.Name = "InversaB";
             this.InversaB.Size = new System.Drawing.Size(63, 23);
             this.InversaB.TabIndex = 16;
@@ -349,7 +329,7 @@
             // LimparB
             // 
             this.LimparB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.LimparB.Location = new System.Drawing.Point(510, 496);
+            this.LimparB.Location = new System.Drawing.Point(561, 456);
             this.LimparB.Name = "LimparB";
             this.LimparB.Size = new System.Drawing.Size(75, 23);
             this.LimparB.TabIndex = 25;
@@ -443,10 +423,8 @@
             this.Controls.Add(this.InversaB);
             this.Controls.Add(this.InversaA);
             this.Controls.Add(this.TranspostaB);
-            this.Controls.Add(this.SimetricaB);
             this.Controls.Add(this.TranspostaA);
             this.Controls.Add(this.OpostaB);
-            this.Controls.Add(this.SimetricaA);
             this.Controls.Add(this.DeterminanteB);
             this.Controls.Add(this.OpostaA);
             this.Controls.Add(this.DeterminanteA);
@@ -485,7 +463,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button DeterminanteA;
         private System.Windows.Forms.Button OpostaA;
-        private System.Windows.Forms.Button SimetricaA;
         private System.Windows.Forms.Button InversaA;
         private System.Windows.Forms.Button TranspostaA;
         private System.Windows.Forms.Button Soma;
@@ -499,7 +476,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button DeterminanteB;
         private System.Windows.Forms.Button OpostaB;
-        private System.Windows.Forms.Button SimetricaB;
         private System.Windows.Forms.Button TranspostaB;
         private System.Windows.Forms.Button InversaB;
         private System.Windows.Forms.Button LimparB;
