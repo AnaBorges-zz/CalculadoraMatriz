@@ -432,7 +432,7 @@ namespace CalculadoraMatriz
         /// <param name="linhas"></param>
         /// <param name="colunas"></param>
         /// <returns></returns>
-        #region Lei de Formação
+       /* #region Lei de Formação
 
         public static float[,] LeiDeFormacao(string lei, int linhas, int colunas)
         {
@@ -554,6 +554,6 @@ namespace CalculadoraMatriz
             return matriz;
         }
 
-        #endregion
+        #endregion*/
     }
 }

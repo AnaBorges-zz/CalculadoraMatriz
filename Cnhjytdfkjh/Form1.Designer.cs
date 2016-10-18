@@ -57,23 +57,16 @@
             this.InversaB = new System.Windows.Forms.Button();
             this.LimparB = new System.Windows.Forms.Button();
             this.LimparR = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.ValorX = new System.Windows.Forms.NumericUpDown();
-            this.EscalarA = new System.Windows.Forms.Button();
-            this.EscalarB = new System.Windows.Forms.Button();
             this.groupMatriz1 = new System.Windows.Forms.GroupBox();
             this.Matriz1 = new System.Windows.Forms.Panel();
             this.groupMatriz2 = new System.Windows.Forms.GroupBox();
             this.Matriz2 = new System.Windows.Forms.Panel();
             this.groupMatrizResut = new System.Windows.Forms.GroupBox();
             this.MatrizResut = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LinhaA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ColunaA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LinhaB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ColunaB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ValorX)).BeginInit();
             this.groupMatriz1.SuspendLayout();
             this.groupMatriz2.SuspendLayout();
             this.groupMatrizResut.SuspendLayout();
@@ -177,7 +170,7 @@
             // 
             // SimetricaA
             // 
-            this.SimetricaA.Location = new System.Drawing.Point(48, 456);
+            this.SimetricaA.Location = new System.Drawing.Point(80, 456);
             this.SimetricaA.Name = "SimetricaA";
             this.SimetricaA.Size = new System.Drawing.Size(83, 23);
             this.SimetricaA.TabIndex = 14;
@@ -186,7 +179,7 @@
             // 
             // InversaA
             // 
-            this.InversaA.Location = new System.Drawing.Point(136, 456);
+            this.InversaA.Location = new System.Drawing.Point(169, 456);
             this.InversaA.Name = "InversaA";
             this.InversaA.Size = new System.Drawing.Size(63, 23);
             this.InversaA.TabIndex = 16;
@@ -238,7 +231,7 @@
             // LimparA
             // 
             this.LimparA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.LimparA.Location = new System.Drawing.Point(208, 456);
+            this.LimparA.Location = new System.Drawing.Point(136, 496);
             this.LimparA.Name = "LimparA";
             this.LimparA.Size = new System.Drawing.Size(75, 23);
             this.LimparA.TabIndex = 25;
@@ -375,42 +368,6 @@
             this.LimparR.UseVisualStyleBackColor = false;
             this.LimparR.Click += new System.EventHandler(this.LimparR_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(818, 44);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 23);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Mult. Escalar";
-            // 
-            // ValorX
-            // 
-            this.ValorX.Location = new System.Drawing.Point(879, 68);
-            this.ValorX.Name = "ValorX";
-            this.ValorX.Size = new System.Drawing.Size(59, 20);
-            this.ValorX.TabIndex = 38;
-            this.ValorX.ValueChanged += new System.EventHandler(this.ValorX_ValueChanged);
-            // 
-            // EscalarA
-            // 
-            this.EscalarA.Location = new System.Drawing.Point(337, 307);
-            this.EscalarA.Name = "EscalarA";
-            this.EscalarA.Size = new System.Drawing.Size(47, 23);
-            this.EscalarA.TabIndex = 40;
-            this.EscalarA.Text = "A * X";
-            this.EscalarA.UseVisualStyleBackColor = true;
-            // 
-            // EscalarB
-            // 
-            this.EscalarB.Location = new System.Drawing.Point(337, 336);
-            this.EscalarB.Name = "EscalarB";
-            this.EscalarB.Size = new System.Drawing.Size(47, 23);
-            this.EscalarB.TabIndex = 41;
-            this.EscalarB.Text = "B * X";
-            this.EscalarB.UseVisualStyleBackColor = true;
-            // 
             // groupMatriz1
             // 
             this.groupMatriz1.Controls.Add(this.Matriz1);
@@ -455,7 +412,7 @@
             this.groupMatrizResut.Size = new System.Drawing.Size(310, 295);
             this.groupMatrizResut.TabIndex = 44;
             this.groupMatrizResut.TabStop = false;
-            this.groupMatrizResut.Text = "MatrizResultado";
+            this.groupMatrizResut.Text = "s";
             // 
             // MatrizResut
             // 
@@ -464,37 +421,14 @@
             this.MatrizResut.Size = new System.Drawing.Size(298, 270);
             this.MatrizResut.TabIndex = 1;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(27, 499);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 20);
-            this.textBox1.TabIndex = 45;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(190, 499);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 23);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Cal. Lei de Formação";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 534);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupMatrizResut);
             this.Controls.Add(this.groupMatriz2);
             this.Controls.Add(this.groupMatriz1);
-            this.Controls.Add(this.EscalarB);
-            this.Controls.Add(this.EscalarA);
-            this.Controls.Add(this.ValorX);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ColunaB);
             this.Controls.Add(this.LinhaB);
@@ -531,7 +465,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ColunaA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LinhaB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ColunaB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ValorX)).EndInit();
             this.groupMatriz1.ResumeLayout(false);
             this.groupMatriz2.ResumeLayout(false);
             this.groupMatrizResut.ResumeLayout(false);
@@ -571,18 +504,12 @@
         private System.Windows.Forms.Button InversaB;
         private System.Windows.Forms.Button LimparB;
         private System.Windows.Forms.Button LimparR;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown ValorX;
-        private System.Windows.Forms.Button EscalarA;
-        private System.Windows.Forms.Button EscalarB;
         private System.Windows.Forms.GroupBox groupMatriz1;
         private System.Windows.Forms.GroupBox groupMatriz2;
         private System.Windows.Forms.GroupBox groupMatrizResut;
         private System.Windows.Forms.Panel Matriz1;
         private System.Windows.Forms.Panel Matriz2;
         private System.Windows.Forms.Panel MatrizResut;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
     }
 }
 
