@@ -392,7 +392,7 @@
             this.groupMatrizResut.Size = new System.Drawing.Size(310, 295);
             this.groupMatrizResut.TabIndex = 44;
             this.groupMatrizResut.TabStop = false;
-            this.groupMatrizResut.Text = "s";
+            this.groupMatrizResut.Text = "MatrizResultado";
             // 
             // MatrizResut
             // 
